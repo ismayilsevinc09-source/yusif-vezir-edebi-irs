@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700&display=swap');
+
+:root {
+    --cream: #F7F3EC;
+    --paper: #FFFCF7;
+    --burgundy: #652D3D;
+    --brown: #51443D;
+    --muted: #8C8177;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--cream);
+    color: var(--brown);
+    font-family: 'Manrope', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 8%;
+    background: var(--paper);
+    border-bottom: 1px solid #E8DED2;
+}
+
+.logo {
+    font-family: 'DM Serif Display', serif;
+    color: var(--burgundy);
+    font-size: 22px;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: var(--brown);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: var(--burgundy);
+}
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+    background: var(--paper);
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.eyebrow {
+    color: var(--burgundy);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 22px;
+}
+
+h1, h2 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 7vw, 76px);
+    line-height: 1.12;
+    color: var(--burgundy);
+    margin-bottom: 24px;
+}
+
+.hero p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: var(--muted);
+    max-width: 580px;
+}
+
+.section {
+    padding: 90px 10%;
+}
+
+.section h2 {
+    font-size: 42px;
+    color: var(--burgundy);
+    margin-bottom: 20px;
+}
+
+.section p {
+    line-height: 1.9;
+    max-width: 750px;
+}
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background: var(--burgundy);
+    color: var(--paper);
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .section {
+        padding: 60px 7%;
+    }
+}
